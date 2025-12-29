@@ -1,0 +1,127 @@
+:root {
+  --app-height: 100vh;
+
+
+  --color-primary: #00a884;
+  --color-secondary: #008069;
+  --bg-color-main: #d1d7db;
+  --bg-color-app: #e9edef;
+  --bg-color-panel-header: #f0f2f5;
+
+
+  --bg-color-panel-header-custom: #f0f2f5;
+  --bg-color-sidebar: #ffffff;
+  --bg-color-sidebar-header: #ffffff;
+
+  --bg-color-search-bar: #ffffff;
+  --bg-color-search-input: #ffffff;
+  --bg-color-chat-active: #f0f2f5;
+  --bg-color-message-out: #d9fdd3;
+  --bg-color-message-in: #ffffff;
+  --text-primary: #111b21;
+  --text-secondary: #667781;
+  --border-light: #e9edef;
+  --border-strong: #d1d7db;
+  --shadow-light: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --icon-color: #54656f;
+  --compose-input-bg: #ffffff;
+  --bg-color-nav-rail: #f0f2f5;
+
+}
+
+[data-theme='dark'] {
+  --color-primary: #00a884;
+  --color-secondary: #008069;
+  --bg-color-main: #0c1317;
+
+  --bg-color-app: #0b141a;
+
+  --bg-color-panel-header: #202c33;
+
+  --bg-color-panel-header-custom: #202c33;
+  --bg-color-sidebar: #0b141a;
+
+  --bg-color-sidebar-header: #202c33;
+  --bg-color-search-bar: #111b21;
+  --bg-color-search-input: #202c33;
+  --bg-color-chat-active: #2a3942;
+  --bg-color-message-out: #005c4b;
+  --bg-color-message-in: #202c33;
+  --text-primary: #e9edef;
+  --text-secondary: #8696a0;
+  --border-light: #2a3942;
+
+  --border-strong: #202c33;
+
+  --shadow-light: 0 1px 3px rgba(0, 0, 0, 0.2);
+  --icon-color: #aebac1;
+  --icon-color: #aebac1;
+  --compose-input-bg: #2a3942;
+  --bg-color-nav-rail: #202c33;
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: var(--bg-color-main);
+  color: var(--text-primary);
+  height: 100vh;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg-color-main);
+
+}
+
+
+[data-theme='dark'] ::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+[data-theme='dark'] ::-webkit-scrollbar-track {
+  background: hsla(0, 0%, 100%, 0.05);
+}
+
+::-webkit-scrollbar {
+  width: 6px !important;
+  height: 6px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+
+.icon-btn {
+  background: transparent;
+  border: none;
+  padding: 8px;
+  color: var(--icon-color);
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s;
+}
+
+.icon-btn:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+[data-theme='dark'] .icon-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
